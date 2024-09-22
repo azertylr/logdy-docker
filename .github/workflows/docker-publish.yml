@@ -12,7 +12,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   PLATFORMS: linux/amd64
-  TAGS: 0.13,latest
+  TAGS: $IMAGE_NAME:0.13,$IMAGE_NAME:latest
 
 jobs:
   build:
